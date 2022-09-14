@@ -1,14 +1,16 @@
 import './App.css';
-import './component/Header';
-import './component/MainVisual'
+
+import Header from './component/Header'
+import MainVisual from './component/MainVisual';
+
 
 function App() {
   return (
     <div className="Wrap">
       <Header />
-      {/* <main>
+      <main>
         <MainVisual />
-      </main> */}
+      </main>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+
 
 const NAVLINK = [
     { id: 1, menu: "Oasi Cashmere 컬렉션", link: '/' },
@@ -25,12 +25,17 @@ const Header = () => {
                         }
                     </ul>
                 </nav>
-                <h1><a href="/"><img src="" alt="제냐" /></a></h1>
+                <h1><a href="/"><img src={process.env.PUBLIC_URL + "/assets/Logo_Zegna.png"} alt="제냐" /></a></h1>
+                <div className="icon">
+                    <i className='xi-search'></i>
+                </div>
             </div>
         </header>
     )
 }
 
+
+export default Header;
 
 
 
